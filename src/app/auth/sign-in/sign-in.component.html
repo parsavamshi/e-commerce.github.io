@@ -1,0 +1,34 @@
+
+<section>
+
+<form [formGroup]="registrationFormGroup" (ngSubmit)="onSubmit()">
+  <h1>Login</h1>
+  <div>
+      <label for="uname">userName</label>
+      <input type="text" formControlName="uname" id="uname" class="form-control">
+      <div *ngIf="formSubmitted || registrationFormGroup.controls.uname.touched  " class="validation-error">
+        <p *ngIf="registrationFormGroup.controls.uname.errors?.['required']">Username is required</p>
+        <p *ngIf="registrationFormGroup.controls.uname.errors?.['minlength']">Name should be at least 5 characters</p>
+        <p *ngIf="registrationFormGroup.controls.uname.errors?.['maxlength']">Name should be less than or equal to 20 characters</p>
+      </div>
+  </div>
+  <div>
+    <label for="password">password</label>
+    <input type="text" formControlName="password" id="password" class="form-control">
+    <div *ngIf="formSubmitted || registrationFormGroup.controls.password.touched" class="validation-error">
+      <p *ngIf="registrationFormGroup.controls.password.errors?.['required']">password is required</p>
+      <p *ngIf="registrationFormGroup.controls.password.errors?.['pattern']">lease enter strong password(Should have Uppercase, lowercase, numbers & special characters</p>
+
+    </div>
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a routerLink="register">Register</a>
+  </div>
+</form>
+
+</section>
+
+
+
+
