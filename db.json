@@ -31,18 +31,28 @@
       "id": 4
     },
     {
-      "data": {
-        "name": "raja",
-        "password": "abc@123",
-        "email": "raja@gmail.com"
-      },
+      "name": "raja",
+      "password": "abc@123",
+      "email": "raja@test.com",
       "id": 5
     },
     {
-      "name": "sai",
+      "name": "vivek",
       "password": "abc@123",
-      "email": "sai@test.com",
+      "email": "vivek@test.com",
       "id": 6
+    },
+    {
+      "name": "srikanth ",
+      "password": "abc@123",
+      "email": "sritkanth@test.com",
+      "id": 7
+    },
+    {
+      "name": "anil",
+      "password": "abc@123",
+      "email": "anil@test.com",
+      "id": 8
     }
   ]
 }

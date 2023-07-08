@@ -11,6 +11,7 @@ import { NoPageComponent } from './no-page/no-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
     SharedModuleModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

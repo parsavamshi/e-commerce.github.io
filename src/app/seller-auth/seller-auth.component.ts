@@ -10,12 +10,26 @@ import { SignUp } from '../data';
 export class SellerAuthComponent {
 
   constructor(private seller:SellerService, private r:Router){}
-  signUp(data:SignUp):void{
-    console.warn(data)
-    this.seller.userSignUp(data).subscribe((result)=>{
-      if(result){
-        this.r.navigate(['seller-home'])
-      }
-    })
+
+  ngOnInit(): void {
+
+    this.seller.reloadSeller()
   }
+  signUp(data:SignUp):void{
+    this.seller.userSignUp(data)
+  }
+
+
+
+  Login(data:SignUp):void{
+    console.warn(data)
+  }
+
+  showLogin= false
+openLogin(){
+this.showLogin=true
+}
+openSignup(){
+  this.showLogin =false;
+}
 }
