@@ -8,7 +8,7 @@ import { SignUp } from '../data';
   styleUrls: ['./seller-auth.component.scss']
 })
 export class SellerAuthComponent {
-
+  authError:String=''
   constructor(private seller:SellerService, private r:Router){}
 
   ngOnInit(): void {
@@ -22,7 +22,14 @@ export class SellerAuthComponent {
 
 
   Login(data:SignUp):void{
-    console.warn(data)
+    // console.warn(data)
+    this.seller.userLogin(data)
+    this.seller.isLoginError.subscribe((isError)=>{
+      // console.warn(isError)
+      if(isError){
+        this.authError = "Email or password is not correct";
+      }
+    })
   }
 
   showLogin= false
@@ -32,4 +39,6 @@ this.showLogin=true
 openSignup(){
   this.showLogin =false;
 }
+
+
 }

@@ -6,6 +6,10 @@ h1{
   font-size: 40px;
   margin: 0;
   color: blueviolet;
+  a{
+    color: blueviolet;
+    text-decoration: none;
+  }
 }
 .nav-search{
   flex: 1;

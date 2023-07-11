@@ -7,27 +7,15 @@
       "id": 1
     },
     {
-      "data": {
-        "name": "",
-        "password": "",
-        "email": ""
-      },
-      "id": 2
-    },
-    {
-      "data": {
-        "name": "tony",
-        "password": "abc@123",
-        "email": "tony@gmail.com"
-      },
+      "name": "tony",
+      "password": "abc@123",
+      "email": "tony@gmail.com",
       "id": 3
     },
     {
-      "data": {
-        "name": "peter",
-        "password": "abc@123",
-        "email": "peter@test.com"
-      },
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@test.com",
       "id": 4
     },
     {
@@ -53,6 +41,29 @@
       "password": "abc@123",
       "email": "anil@test.com",
       "id": 8
+    },
+    {
+      "name": "vamshi2",
+      "password": "abc123",
+      "email": "vamshi@test.com",
+      "id": 9
+    },
+    {
+      "name": "peter",
+      "password": "abc123",
+      "email": "peter@test.com",
+      "id": 10
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone 14",
+      "price": "1500",
+      "color": "red",
+      "category": "mobile",
+      "description": "hello, this is apple product",
+      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-125834/Apple-iPhone-14_FINAL_featured-image-packshot-review.jpg",
+      "id": 1
     }
   ]
 }
