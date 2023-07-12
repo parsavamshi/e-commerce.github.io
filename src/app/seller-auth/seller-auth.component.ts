@@ -17,6 +17,9 @@ export class SellerAuthComponent {
   }
   signUp(data:SignUp):void{
     this.seller.userSignUp(data)
+    if(data){
+      this.showLogin = true
+    }
   }
 
 

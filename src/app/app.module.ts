@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { AuthGuard } from './auth.guard';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,13 +26,17 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
     NoPageComponent,
     FooterComponent,
     SellerHomeComponent,
-    SellerAddProductComponent
+    SellerAddProductComponent,
+    SellerUpdateProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModuleModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule,
+    NgbModule,
+    // NgbCarouselModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

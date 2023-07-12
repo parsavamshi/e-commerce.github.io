@@ -32,3 +32,21 @@ width: 300px;
   }
 
 }
+.error-p{
+  color: red;
+}
+.message-p{
+  color: green;
+}
+
+.carousel-caption{
+  // color: black;
+  background-color: #0000007d;
+  border-radius: 10px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  background-color: black;
+  border-radius: 5px
+}
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
